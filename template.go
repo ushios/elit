@@ -65,7 +65,7 @@ type Property struct {
 	Type        PropertyType        `json:"type,omitempty"`
 	Analyzer    string              `json:"analyzer,omitempty"`
 	Format      string              `json:"format,omitempty"`
-	Index       string              `json:"index,omitempty"`
+	Index       interface{}         `json:"index,omitempty"`
 	FieldData   bool                `json:"fielddata,omitempty"`
 	Fields      map[string]Property `json:"fields,omitempty"`
 	Properies   map[string]Property `json:"properties,omitempty"`
