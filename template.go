@@ -67,6 +67,7 @@ type Property struct {
 	Format      string              `json:"format,omitempty"`
 	Index       interface{}         `json:"index,omitempty"`
 	FieldData   bool                `json:"fielddata,omitempty"`
+	NullValue   string              `json:"null_value,omitempty"`
 	Fields      map[string]Property `json:"fields,omitempty"`
 	Properies   map[string]Property `json:"properties,omitempty"`
 	IgnoreAbove int                 `json:"ignore_above,omitempty"`
